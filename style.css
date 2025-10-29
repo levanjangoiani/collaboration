@@ -1,25 +1,33 @@
-.slider-container {
-  overflow: hidden;
-  padding: 20px;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+ 
+    }
+    .carousel.active {
+      cursor: pointer;
+    }
+    .slide {
+      min-width: 100vw; /* თითო სლაიდი ეკრანის სიგანეა */
+      height: 100vh;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .slide:nth-child(1){background:linear-gradient(135deg,#0099ff,#6600ff);}
+    .slide:nth-child(2){background:linear-gradient(135deg,#00cc66,#003399);}
+    .slide:nth-child(3){background:linear-gradient(135deg,#ff6600,#ff0099);}
 
-.slider {
-  display: flex;
-  gap: 16px;
-  transition: transform 0.5s ease;
-}
-
-.card {
-  flex: 0 0 auto;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  background: white;
-  text-align: center;
-}
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
