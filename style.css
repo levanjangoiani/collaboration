@@ -1,0 +1,25 @@
+.slider-container {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.slider {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
