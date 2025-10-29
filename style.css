@@ -11,7 +11,7 @@
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
- 
+        scrollbar-width: none;
     }
     .carousel.active {
       cursor: pointer;
@@ -27,7 +27,25 @@
       font-size: 3em;
       font-weight: bold;
     }
-    .slide:nth-child(1){background:linear-gradient(135deg,#0099ff,#6600ff);}
-    .slide:nth-child(2){background:linear-gradient(135deg,#00cc66,#003399);}
-    .slide:nth-child(3){background:linear-gradient(135deg,#ff6600,#ff0099);}
+    
+    /* Prevent images from being selected or dragged */
+    .slide {
+      -webkit-user-drag: none; /* prevent image dragging in WebKit */
+      user-drag: none;
+      -webkit-user-select: none; /* Safari/Chrome */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+ */
+      user-select: none; /* Standard */
+    }
+
+    /* If images are nested inside slide containers, also cover img elements */
+    .carousel img {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      outline: none;
+    }
 

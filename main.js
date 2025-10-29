@@ -4,6 +4,25 @@
 // .then(data => htmlRenderer(data));
 const carousel = document.getElementById('carousel');
 
+// Make images inside the carousel non-draggable and non-selectable
+if (carousel) {
+  const imgs = carousel.querySelectorAll('img');
+  imgs.forEach(img => {
+    // Prevent default dragging behavior and selection
+    try {
+      img.setAttribute('draggable', 'false');
+    } catch (e) {
+      // ignore
+    }
+    img.addEventListener('dragstart', (ev) => ev.preventDefault());
+    // Also explicitly disable selection via inline style for older browsers
+    img.style.userSelect = 'none';
+    img.style.webkitUserSelect = 'none';
+    // webkit-specific: prevent image being dragged as a resource
+    img.style.webkitUserDrag = 'none';
+  });
+}
+
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -29,7 +48,7 @@ const carousel = document.getElementById('carousel');
       if(!isDown) return;
       e.preventDefault();
       const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 1.3; // სისწრაფე
+      const walk = (x - startX) * 1.5; // სისწრაფე
       carousel.scrollLeft = scrollLeft - walk;
     });
 
