@@ -2,11 +2,11 @@
 // fetch('https://fakestoreapi.com/products')
 // .then(data =>  data.json())
 // .then(data => htmlRenderer(data));
-const carousel = document.getElementById('carousel');
+let carousel = document.getElementById('carousel');
 
 // Make images inside the carousel non-draggable and non-selectable
 if (carousel) {
-  const imgs = carousel.querySelectorAll('img');
+  let imgs = carousel.querySelectorAll('img');
   imgs.forEach(img => {
     // Prevent default dragging behavior and selection
     try {
@@ -47,8 +47,8 @@ if (carousel) {
     carousel.addEventListener('mousemove', (e) => {
       if(!isDown) return;
       e.preventDefault();
-      const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 1.5; // სისწრაფე
+      let x = e.pageX - carousel.offsetLeft;
+      let walk = (x - startX) * 1.5; // სისწრაფე
       carousel.scrollLeft = scrollLeft - walk;
     });
 
@@ -59,7 +59,7 @@ if (carousel) {
       scrollLeft = carousel.scrollLeft;
     });
     carousel.addEventListener('touchmove', (e) => {
-      const x = e.touches[0].pageX;
-      const walk = (x - startTouchX) * 1.5;
+      let x = e.touches[0].pageX;
+      let walk = (x - startTouchX) * 1.5;
       carousel.scrollLeft = scrollLeft - walk;
     });
