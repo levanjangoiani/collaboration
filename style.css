@@ -1,29 +1,24 @@
     body {
       margin: 0;
       padding: 0;
+      background: #111;
+      color: #fff;
       font-family: sans-serif;
     }
-    /* კარუსელი */
     .carousel {
-      margin: 0 auto;
-      border-radius: 20px;
-      border: 1px solid gray;
-      height: 362px;
-      width: 1166px;
       display: flex;
       overflow-x: auto;
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        
     }
     .carousel.active {
       cursor: pointer;
     }
     .slide {
-      min-width: 100%; /* თითო სლაიდი ეკრანის სიგანეა */
-      height: 100%;
+      min-width: 100vw; /* თითო სლაიდი ეკრანის სიგანეა */
+      height: 100vh;
       flex-shrink: 0;
       scroll-snap-align: start;
       display: flex;
@@ -32,65 +27,4 @@
       font-size: 3em;
       font-weight: bold;
     }
-    /* კარუსელი რჩება აქ */
-    /* ორი პატარა დივი გვერდიგვერდ */
-    .hover {
-      margin-top: 40px;
-      margin: 10px auto;
-      width: 1166px;
-      height: 262px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .left, .right {
-      border-radius: 20px;
-      border: 1px solid gray;
-      width: 568px;
-      background-color: white;
-      height: 167px;
-      display: inline-block;
-      transition: 0.5s ease-in-out;
-    }
-.left:hover{
-  width: 578px;
-  height: 177px;
-  transition: 0.5s ease-in-out; 
-}
-.right:hover{
-  width: 578px;
-  height: 177px;
-  transition: 0.5s ease-in-out; 
-}
-.leftImage, .rightImage {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-}
-/* აქ რჩება */
-/* კატეგორიები */
-.categories {
-  margin: 40px auto;
-  width: 1166px;
-  display: flex;
-  flex-direction: column;
-}
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-.card {
-  border: 1px solid gray;
-  border-radius: 20px;
-  width: 205px;
-  height: 110px;
-  margin: 10px;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-}
-.card:hover {
-  transform: scale(1.05);
-  transition: 0.3s ease-in-out;
-}
+
