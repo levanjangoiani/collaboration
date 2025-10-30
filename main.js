@@ -22,10 +22,12 @@ if (carousel) {
     img.style.webkitUserDrag = 'none';
   });
 }
-
+// ---- მაუსის მხარდაჭერა (დასტოპი) ----
     let isDown = false;
     let startX;
     let scrollLeft;
+    let scrollStep = 1000; // რამდენი პიქსელით გადავიდეს ერთ ჯერზე
+    let autoScrollSpeed = 3000; // ყოველ რამდენ წამში გადავიდეს (3 წამი)
 
     carousel.addEventListener('mousedown', (e) => {
       isDown = true;
@@ -51,7 +53,16 @@ if (carousel) {
       let walk = (x - startX) * 1.5; // სისწრაფე
       carousel.scrollLeft = scrollLeft - walk;
     });
+    setInterval(() => {
+  if (!isDown) { // თუ მომხმარებელი არ აჭერს მაუსს ან თითს
+    // გადავა მომდევნო პოზიციაზე
+    carousel.scrollLeft += scrollStep;
 
+    // თუ ბოლო სლაიდამდე მივიდა, დაბრუნდეს დასაწყისში
+    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+      carousel.scrollLeft = 0;
+    }
+  }}, autoScrollSpeed);
     // ---- ტაჩის მხარდაჭერა (მობილური) ----
     let startTouchX = 0;
     carousel.addEventListener('touchstart', (e) => {
@@ -63,3 +74,4 @@ if (carousel) {
       let walk = (x - startTouchX) * 1.5;
       carousel.scrollLeft = scrollLeft - walk;
     });
+
