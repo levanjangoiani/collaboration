@@ -1,30 +1,87 @@
-    body {
-      margin: 0;
-      padding: 0;
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
-    }
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-    .carousel.active {
-      cursor: pointer;
-    }
-    .slide {
-      min-width: 100vw; /* თითო სლაიდი ეკრანის სიგანეა */
-      height: 100vh;
-      flex-shrink: 0;
-      scroll-snap-align: start;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3em;
-      font-weight: bold;
-    }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 80px;
+  background-color: #F9F7FD;
+}
+.nav-conteiner{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  font-weight: 600;
+}
+li a img{
+  width: 220px;
+  height: 40px;
+}
+li button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+li button svg{
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+}
+li input{
+  width: 375px;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 15px;
+  border: none;
+}
+.nav-right{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-right img{
+  width: 40px;
+  height: 40px;
+}
+.login{
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  background-color: #FFFFFF;
+}
+.login:hover{
+  cursor: pointer;
+  box-shadow: purple 1px 2px 8.5px 0px;
+  transition: 0.5s ease-in-out;
+}
+.login svg{
+  width: 35px;
+  height: 35px;
+  padding-top: 0px;
+}
+.languge{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.languge:hover{
+  cursor: pointer;
+  box-shadow: purple 1px 2px 8.5px 0px;
+  transition: 0.5s ease-in-out;
+}
