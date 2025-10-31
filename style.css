@@ -97,10 +97,16 @@ li input{
   padding-top: 0px;
 }
 .languge{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #FFFFFF;
+
+}
+.languge:hover{
+  cursor: pointer;
+  box-shadow: purple 1px 2px 15px 0px;
+  transition: 0.5s ease-in-out;
 }
 <<<<<<< Updated upstream
 /* ნავიგაცია დასრულდა აქ  */
