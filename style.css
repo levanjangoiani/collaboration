@@ -1,20 +1,35 @@
+<<<<<<< Updated upstream
 *{
+=======
+   *{
+>>>>>>> Stashed changes
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< Updated upstream
 body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 /* ნავიგაცია იწყება აქ */
+=======
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+>>>>>>> Stashed changes
 ul{
   display: flex;
   justify-content: center;
   list-style: none;
   height: 80px;
+<<<<<<< Updated upstream
   width: 100%;
+=======
+>>>>>>> Stashed changes
   background-color: #F9F7FD;
 }
 .nav-conteiner{
@@ -87,6 +102,7 @@ li input{
   border-radius: 50%;
   background-color: #FFFFFF;
 }
+<<<<<<< Updated upstream
 /* ნავიგაცია დასრულდა აქ  */
 
 /* კარუსელის სექცია იწყება აქ */
@@ -147,6 +163,63 @@ li input{
   display: inline-block;
   transition: 0.5s ease-in-out;
 }
+=======
+.languge:hover{
+  cursor: pointer;
+  box-shadow: purple 1px 2px 8.5px 0px;
+  transition: 0.5s ease-in-out;
+}
+  
+    /* კარუსელი */
+    .carousel {
+      margin: 0 auto;
+      border-radius: 20px;
+      border: 1px solid gray;
+      height: 362px;
+      width: 1166px;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        
+    }
+    .carousel.active {
+      cursor: pointer;
+    }
+    .slide {
+      min-width: 100%; /* თითო სლაიდი ეკრანის სიგანეა */
+      height: 100%;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    /* კარუსელი რჩება აქ */
+    /* ორი პატარა დივი გვერდიგვერდ */
+    .hover {
+      margin-top: 40px;
+      margin: 10px auto;
+      width: 1166px;
+      height: 262px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left, .right {
+      border-radius: 20px;
+      border: 1px solid gray;
+      width: 568px;
+      background-color: white;
+      height: 167px;
+      display: inline-block;
+      transition: 0.5s ease-in-out;
+    }
+>>>>>>> Stashed changes
 .left:hover{
   width: 578px;
   height: 177px;
@@ -163,6 +236,7 @@ li input{
   border-radius: 20px;
   object-fit: cover;
 }
+<<<<<<< Updated upstream
 /* ორი დივის სექცია რჩება აქ */
 
 /* კატეგორიების სექცია იწყება აქ */
@@ -174,6 +248,12 @@ li input{
   width: 100%;
 }
 .categories{
+=======
+/* აქ რჩება */
+/* კატეგორიები */
+.categories {
+  margin: 40px auto;
+>>>>>>> Stashed changes
   width: 1166px;
   display: flex;
   flex-direction: column;
@@ -181,9 +261,15 @@ li input{
 .cards{
   display: flex;
   flex-wrap: wrap;
+<<<<<<< Updated upstream
   padding-top: 20px;
 }
 .card{
+=======
+  
+}
+.card {
+>>>>>>> Stashed changes
   border: 1px solid gray;
   border-radius: 20px;
   width: 205px;
@@ -192,8 +278,15 @@ li input{
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
+<<<<<<< Updated upstream
 .card:hover{
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
 /* კატეგორიების სექცია რჩება აქ */
+=======
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+>>>>>>> Stashed changes
