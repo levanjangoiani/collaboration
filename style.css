@@ -71,7 +71,53 @@ body{
       font-weight: bold;
     }
     /* კარუსელი რჩება აქ */
- 
-
-
+.recommendations-parent{
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+.recomendations-title h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.recommendations{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  
+}
+.anime{
+  display: flex;
+  flex-direction: column;
+  
+ }
+ .anime h3{
+  margin-top: 10px;
+  width: 129px;
+ }
+.anime img{
+  width: 129px;
+  height: 190px;
+  border-radius: 10px;
+}
+.div2{
+      width: 290px;
+}
+button{
+  margin-top: 15px;
+  margin-left: 455px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #515151;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover{
+  opacity: 0.8;
+  transition: 0.5s;
+}
 
