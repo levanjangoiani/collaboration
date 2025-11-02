@@ -1,5 +1,5 @@
 // Main api
-fetch('https://fakestoreapi.com/products')
+fetch('https://api.escuelajs.co/api/v1/products')
 .then(data =>  data.json())
 .then(data => htmlRenderer(data));
 
@@ -7,10 +7,9 @@ function htmlRenderer(products){
     console.log(products);
 }
 
-<<<<<<< Updated upstream
+
 let carousel = document.getElementById('carousel');
-=======
->>>>>>> Stashed changes
+
 // Make images inside the carousel non-draggable and non-selectable
 if (carousel){
   let imgs = carousel.querySelectorAll('img');

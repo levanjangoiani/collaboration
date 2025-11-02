@@ -1,116 +1,14 @@
-<<<<<<< Updated upstream
 *{
-=======
-   *{
->>>>>>> Stashed changes
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-<<<<<<< Updated upstream
+
 body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-/* ნავიგაცია იწყება აქ */
-=======
- body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
->>>>>>> Stashed changes
-ul{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  height: 80px;
-<<<<<<< Updated upstream
-  width: 100%;
-=======
->>>>>>> Stashed changes
-  background-color: #F9F7FD;
-}
-.nav-conteiner{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 50px;
-  font-weight: 600;
-}
-li a img{
-  width: 220px;
-  height: 40px;
-}
-li button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 150px;
-  height: 40px;
-  border-radius: 15px;
-  border: none;
-  font-size: 14px;
-  font-weight: 800;
-  background-color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
-}
-li button svg{
-  width: 20px;
-  height: 20px;
-  margin-top: 3px;
-}
-li input{
-  width: 375px;
-  height: 35px;
-  border-radius: 20px;
-  padding-left: 15px;
-  border: none;
-}
-.nav-right{
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.nav-right img{
-  width: 40px;
-  height: 40px;
-}
-.login{
-  width: 120px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  font-size: 16px;
-  background-color: #FFFFFF;
-}
-.login:hover{
-  cursor: pointer;
-  box-shadow: purple 1px 2px 8.5px 0px;
-  transition: 0.5s ease-in-out;
-}
-.login svg{
-  width: 35px;
-  height: 35px;
-  padding-top: 0px;
-}
-.languge{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-
-}
-.languge:hover{
-  cursor: pointer;
-  box-shadow: purple 1px 2px 15px 0px;
-  transition: 0.5s ease-in-out;
-}
-<<<<<<< Updated upstream
-/* ნავიგაცია დასრულდა აქ  */
-
 /* კარუსელის სექცია იწყება აქ */
 .carousel-parent{
   display: flex;
@@ -142,39 +40,6 @@ li input{
   justify-content: center;
 }
 /* კარუსელის სექცია რჩება აქ */
-
-/* ორი დივის სექცია იწყება აქ */
-.hover-parant{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40px;
-  width: 100%;
-}
-.hover{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 1166px;
-  height: 262px;
-  gap: 5px;
-}
-.left, .right {
-  border-radius: 20px;
-  border: 1px solid gray;
-  width: 568px;
-  background-color: white;
-  height: 167px;
-  display: inline-block;
-  transition: 0.5s ease-in-out;
-}
-=======
-.languge:hover{
-  cursor: pointer;
-  box-shadow: purple 1px 2px 8.5px 0px;
-  transition: 0.5s ease-in-out;
-}
   
     /* კარუსელი */
     .carousel {
@@ -206,93 +71,7 @@ li input{
       font-weight: bold;
     }
     /* კარუსელი რჩება აქ */
-    /* ორი პატარა დივი გვერდიგვერდ */
-    .hover {
-      margin-top: 40px;
-      margin: 10px auto;
-      width: 1166px;
-      height: 262px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .left, .right {
-      border-radius: 20px;
-      border: 1px solid gray;
-      width: 568px;
-      background-color: white;
-      height: 167px;
-      display: inline-block;
-      transition: 0.5s ease-in-out;
-    }
->>>>>>> Stashed changes
-.left:hover{
-  width: 578px;
-  height: 177px;
-  transition: 0.5s ease-in-out; 
-}
-.right:hover{
-  width: 578px;
-  height: 177px;
-  transition: 0.5s ease-in-out; 
-}
-.leftImage, .rightImage {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-}
-<<<<<<< Updated upstream
-/* ორი დივის სექცია რჩება აქ */
+ 
 
-/* კატეგორიების სექცია იწყება აქ */
-.categories-parant{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40px;
-  width: 100%;
-}
-.categories{
-=======
-/* აქ რჩება */
-/* კატეგორიები */
-.categories {
-  margin: 40px auto;
->>>>>>> Stashed changes
-  width: 1166px;
-  display: flex;
-  flex-direction: column;
-}
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-<<<<<<< Updated upstream
-  padding-top: 20px;
-}
-.card{
-=======
-  
-}
-.card {
->>>>>>> Stashed changes
-  border: 1px solid gray;
-  border-radius: 20px;
-  width: 205px;
-  height: 110px;
-  margin: 10px;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-}
-<<<<<<< Updated upstream
-.card:hover{
-  transform: scale(1.05);
-  transition: 0.3s ease-in-out;
-}
-/* კატეგორიების სექცია რჩება აქ */
-=======
-.card:hover {
-  transform: scale(1.05);
-  transition: 0.3s ease-in-out;
-}
->>>>>>> Stashed changes
+
+
