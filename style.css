@@ -3,12 +3,73 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Mulish", sans-serif;
 }
+/* ნავიგაციის სექცია იწყება აქ */
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1F1F1F;
+  color: white;
+  height: 75px;
+}
+.left li{
+  font-size: 25px;
+  font-weight: bold;
+  color: #FC5342;
+}
+.middle{
+  display: flex;
+  gap: 30px;
+}
+.middle li{
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hover{
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  width: 250px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: auto;
+  text-align: left;
+  background-color: #1F1F1F;
+  padding: 10px;
+  z-index: 1;
+}
+li.anime:hover .hover{
+  display: block;
+}
+li.manga:hover .hover{
+  display: block;
+}
+li.characters:hover .hover{
+  display: block;
+}
+.right{
+  display: flex;
+  gap: 20px;
+}
+.right li input{
+  width: 350px;
+  height: 35px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: white 1px solid;
+  color: white;
+  background-color: transparent;
+}
+/* ნავიგაციის სექცია მთავრდება აქ */
 /* კარუსელის სექცია იწყება აქ */
 .carousel-parent{
   display: flex;
@@ -71,7 +132,3 @@ body{
       font-weight: bold;
     }
     /* კარუსელი რჩება აქ */
- 
-
-
-
