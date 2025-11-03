@@ -16,22 +16,18 @@ function FullApi(products){
 function AnimeRecomendationRenderer(recommendations){
     console.log(recommendations);
     for(let i=0; i< 5; i++){
+
         let random=Math.round(Math.random() * recommendations.length);
-    
-    
         let anime = recommendations[random];
         let animeElement = document.createElement('div');
-        animeElement.classList.add('anime');
+        animeElement.classList.add('anime-card');
         animeElement.innerHTML += `
-             <img src="${anime.entry.images.jpg.image_url}" alt="${anime.title}">
+            <img src="${anime.entry.images.jpg.image_url}" alt="${anime.title}">
             <h3>${anime.entry.title}</h3>
         `;
         recSection.appendChild(animeElement);
-    
 }
 }
-
-
 // let carousel = document.getElementById('carousel');
 
 // // Make images inside the carousel non-draggable and non-selectable
